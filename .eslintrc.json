@@ -29,6 +29,7 @@
                     ".js"
                 ]
             }
-        ]
+        ],
+        "linebreak-style": 0
     }
 }
