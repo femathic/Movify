@@ -13,4 +13,10 @@ exclude_paths:
   - "**.md"
   - "**.html"
   - "**.json"
+  - "**.css"
   - "LICENSE"
+
+exclude_patterns:
+  - "tailwind.js"
+  - "styles/tailwind.css"
+  - "src/serviceWorker.js"
