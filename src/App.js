@@ -25,21 +25,3 @@ function App() {
 }
 
 export default App;
-
-
-// config /
-//   db /
-//   dist /
-//   features /
-//   src / styles /
-//   src / serviceWorker.js
-// tailwind.js
-//   ** /node_modules/
-// script /
-// ** /spec/
-//   ** /test/
-//   ** /tests/
-// Tests /
-// ** /vendor/
-//   **/*_test.go
-// **/*.d.ts
