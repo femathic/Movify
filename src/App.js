@@ -1,7 +1,18 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+import { useDispatch, useSelector } from 'react-redux';
 import logo from './logo.svg';
+import { GetPopularMovies } from './store/actions/popularMovie';
 
-function App() {
+
+const App = () => {
+  const dispatch = useDispatch();
+  const { popularMovies } = useSelector((state) => ({
+    popularMovies: state.popularMovies.data,
+    error: state.error,
+  }));
+  useEffect(() => {
+    GetPopularMovies(dispatch);
+  }, [dispatch]);
   return (
     <div className="App">
       <header className="App-header">
@@ -19,9 +30,10 @@ function App() {
         >
           Learn React
         </a>
+        <button type="button" onClick={() => GetPopularMovies(dispatch, popularMovies.page + 1)}> get more</button>
       </header>
     </div>
   );
-}
+};
 
 export default App;
